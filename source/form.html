@@ -7,7 +7,7 @@
   </head>
   <body class="page-body">
     <header class="page-header">
-      <div class="conteiner">
+      <div class="container">
         <a href="index.html" class="logo page-header__logo"><img src="img/logo.svg" alt="logo" class="page-header__logo-img" width="34" height="38" >
         <img src="img/logo-title.svg" alt="logo" class="page-header__logo-img-title" width="101" height="18"></a>
         <nav class="main-nav">
@@ -30,8 +30,8 @@
           <form class="selection-form selection__form" method="get" action="https://echo.htmlacademy.ru">
             <fieldset class="selection-form__fieldset">
               <p class="selection-form__item">
-                <label class="label selection-label" for="meeting-name">Имя:*</label>
-                <input type="text" class="input selection-input" id="meeting-name" name="name" placeholder="барсик">
+                <label class="label selection-form__label" for="meeting-name">Имя:*</label>
+                <input type="text" class="input selection-form__input" id="meeting-name" name="name" placeholder="барсик">
               </p>
               <p class="selection-form__item">
                 <label class="selection-form__label" for="meeting-width">Вес (кг):*</label>
@@ -62,11 +62,11 @@
               </legend>
               <p class="selection-form__item-contacts">
                 <label for="mail" class="selection-form__mail">E-mail:*</label>
-                <input type="email" class="selection-form__mail-input" id="mail" name="mail" placeholder="kuklachev@gmail.com">
+                <input type="email" class="selection-form__mail-input selection-form__input" id="mail" name="mail" placeholder="kuklachev@gmail.com">
               </p>
               <p class="selection-form__item-contacts">
                 <label for="phone" class="selection-form__phone">Телефон:*</label>
-                <input type="tel" class="selection-form__phone-input" id="phone" name="tel" placeholder="8 (960) 900-60-90">
+                <input type="tel" class="selection-form__phone-input selection-form__input" id="phone" name="tel" placeholder="8 (960) 900-60-90">
               </p>
             </fieldset>
             <fieldset class="selection-form__fieldset">
@@ -82,22 +82,22 @@
               </legend>
               <p class="selection-form__other-item">
                 <input class="selection-form__other-input" type="checkbox" name="sugar" id="sugar" checked>
-                <label class="selection-form__other-label" for="sugar">Сахарозаменитель</label>
+                <label class="selection-form__other-label selection-form__label" for="sugar">Сахарозаменитель</label>
               </p>
               <p class="selection-form__other-item">
                 <input class="selection-form__other-input" type="checkbox" name="water" id="water">
-                <label class="selection-form__other-label" for="water">Питьевая вода</label>
+                <label class="selection-form__other-label selection-form__label" for="water">Питьевая вода</label>
               </p>
               <p class="selection-form__other-item">
                 <input class="selection-form__other-input" type="checkbox" name="milk" id="milk">
-                <label class="selection-form__other-label" for="milk">Молоко</label>
+                <label class="selection-form__other-label selection-form__label" for="milk">Молоко</label>
               </p>
               <p class="selection-form__other-item">
                 <input class="selection-form__other-input" type="checkbox" name="vitamins" id="vitamins">
-                <label class="selection-form__other-label" for="vitamins">Витамины</label>
+                <label class="selection-form__other-label selection-form__label" for="vitamins">Витамины</label>
               </p>
             </fieldset>
-            <button class="selection-form__submit-btn" type="submit">Отправить заявку</button>
+            <button class="selection-form__submit-btn button" type="submit">Отправить заявку</button>
             <p class="selection-form__require">* — Обязательные поля</p>
           </form>
         </div>
@@ -107,8 +107,10 @@
       <div class="container">
         <h2 class="visually-hidden">Карта с адресом</h2>
         <section class="page-footer__map">
+          <div class="page-footer__wrapper page-footer__wrapper--secondary-pages">
           <h3 class="page-footer__map-title">Приглашаем к сотрудничеству дилеров!</h3>
           <p class="page-footer__map-text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          </div>
           <img class="page-footer__map-img" src="img/map-mobile.jpg" alt="карта" width="320" height="362">
         </section>
         <section class="page-footer__socials socials">
