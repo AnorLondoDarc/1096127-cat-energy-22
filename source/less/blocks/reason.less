@@ -1,0 +1,112 @@
+.reason__title--h2 {
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 40px;
+}
+.reason__list {
+  list-style: none;
+  padding: 0;
+}
+.reason__item {
+  margin: 0;
+  padding: 0;
+}
+.reason__item--leaf {
+  padding-left: 80px;
+  position: relative;
+  &::before {
+    content:"";
+    background-color: @green;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 0;
+  }
+  &::after {
+    content: "";
+    background-image: url(../../img/icons/leaf.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 25px;
+    height: 28px;
+    top: 16px;
+    left:18px;
+    background-position: 0 0;
+  }
+}
+.reason__item--powder {
+  padding-left: 80px;
+  position: relative;
+  &::before {
+    content:"";
+    background-color: @green;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 0;
+  }
+  &::after {
+    content: "";
+    background-image: url(../../img/icons/powder.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 29px;
+    height: 31px;
+    top: 13px;
+    left:15px;
+    background-position: 0 0;
+  }
+}
+.reason__item--eat {
+  padding-left: 80px;
+  position: relative;
+  &::before {
+    content:"";
+    background-color: @green;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 0;
+  }
+  &::after {
+    content: "";
+    background-image: url(../../img/icons/eat.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 25px;
+    height: 30px;
+    top: 16px;
+    left:18px;
+    background-position: 0 0;
+  }
+}
+.reason__item--clock {
+  padding-left: 80px;
+  position: relative;
+  &::before {
+    content:"";
+    background-color: @green;
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 0;
+  }
+  &::after {
+    content: "";
+    background-image: url(../../img/icons/alarm.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 32px;
+    height: 33px;
+    top: 13px;
+    left:14px;
+    background-position: 0 0;
+  }
+}
+.reason__text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  color: @dark-gray;
+  font-family:"Arial" sans-serif;
+}

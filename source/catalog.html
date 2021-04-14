@@ -2,11 +2,12 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Document</title>
   </head>
   <body class="page-body">
     <header class="page-header">
-      <div class="conteiner">
+      <div class="container">
         <a href="index.html" class="logo page-header__logo"><img src="img/logo.svg" alt="logo" class="page-header__logo-img" width="34" height="38" >
         <img src="img/logo-title.svg" alt="logo" class="page-header__logo-img-title" width="101" height="18"></a>
         <nav class="main-nav">
@@ -72,7 +73,7 @@
               <div class="catalog__wrapp">
                 <img class="catalog__img" src="img/catalog-img/pro-fish-500.png" alt="" width="68" height="78">
               </div>
-              <h3 class="catalog__headinge">Cat Energy PRO 500 г</h3>
+              <h3 class="catalog__heading">Cat Energy PRO 500 г</h3>
               <dl class="catalog__description-list">
                 <div class="catalog__desc-wrap">
                   <dt class="catalog__key">Масса</dt>
@@ -135,7 +136,7 @@
               <div class="catalog__wrapp">
                 <img class="catalog__mg" src="img/catalog-img/slim-buck-1000.png" alt="" width="84" height="100">
               </div>
-              <h3 class="catalog__headin">Cat Energy slim 1000 г</h3>
+              <h3 class="catalog__heading">Cat Energy slim 1000 г</h3>
               <dl class="catalog__description-list">
                 <div class="catalog__desc-wrap">
                   <dt class="catalog__key">Масса</dt>
@@ -177,17 +178,17 @@
               <div class="catalog__wrapp">
                 <img class="card-icatalog" src="img/catalog-img/plus.svg" alt="" width="30" height="30">
               </div>
-              <h3 class="catalog__sub-heading">Заказать еще 100500 товаров</h3>
+              <h3 class="catalog__sub-heading">Показать еще 100500 товаров</h3>
               <p class="catalog__text">На самом деле вкусов гораздо больше!</p>
-              <a class="catalog__link catalog__link--more button" href="#">Показать все</a>
+              <a class="catalog__link catalog__link--more" href="#">Показать все</a>
             </li>
           </ul>
         </div>
       </section>
       <section class="goods">
         <div class="container">
-          <h2 class="goods__title">Дополнительные товары</h2>
-          <ul class="goods__list">
+          <h2 class="goods__title--h2">Дополнительные товары</h2>
+          <ul class="goods__list-wrapper">
             <li class="goods__item">
               <h3 class="goods__title">Сахарозаменитель</h3>
               <dl class="goods__list">
@@ -205,7 +206,7 @@
               <a class="goods__link button" href="#">Заказать</a>
             </li>
             <li class="goods__item">
-              <h3 class="goods__title">Ьолоко</h3>
+              <h3 class="goods__title">Молоко</h3>
               <dl class="goods__list">
                 <dt class="goods__meaning">1 литр</dt>
                 <dd class="goods__price">100 Р.</dd>
@@ -222,7 +223,8 @@
             </li>
           </ul>
           <div class="gift">
-            <img class="gift__img gift-img" src="img/catalog-img/icon_gift.svg" alt="" width="78" height="80">
+            <div class="gift__img-wrapper">
+            </div>
             <p class="gift__text gift-text">Закажите все и получите чехол для кота в подарок!</p>
           </div>
         </div>
@@ -232,8 +234,10 @@
       <div class="container">
         <h2 class="visually-hidden">Карта с адресом</h2>
         <section class="page-footer__map">
+          <div class="page-footer__wrapper page-footer__wrapper--secondary-pages">
           <h3 class="page-footer__map-title">Приглашаем к сотрудничеству дилеров!</h3>
           <p class="page-footer__map-text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          </div>
           <img class="page-footer__map-img" src="img/map-mobile.jpg" alt="карта" width="320" height="362">
         </section>
         <section class="page-footer__socials socials">
