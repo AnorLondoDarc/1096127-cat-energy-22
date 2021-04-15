@@ -2,19 +2,24 @@
   background-image: url(../../img/catalog-img/gift-bg.jpg);
   background-repeat: no-repeat;
   background-position: 0 0;
+  background-size: cover;
   width: 280px;
   height: 289px;
-  padding-top: 58px;
-}
-.gift__img-wrapper {
-  background-image: url(../../img/catalog-img/icon_gift.svg);
-  background-repeat: no-repeat;
-  background-size: 78px 80px;
-  background-position: 0 0;
-  width: 78px;
-  height: 80px;
-  margin: 0 auto;
-  margin-bottom: 48px;
+  padding-top: 168px;
+  position: relative;
+  &::before {
+    content: "";
+    background-image: url(../../img/catalog-img/icon_gift.svg);
+    background-repeat: no-repeat;
+    background-size: 78px 80px;
+    background-position: 0 0;
+    width: 78px;
+    height: 80px;
+    position: absolute;
+    left: 50%;
+    top: 58px;
+    transform: translateX(-50%);
+  }
 }
 .gift__text {
   font-weight: normal;

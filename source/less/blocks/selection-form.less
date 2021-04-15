@@ -23,6 +23,10 @@
   color: @dark-gray;
   border: 1px solid @light-gray;
   padding:14px 0 14px 13px;
+  &::placeholder {
+    color: @dark-gray;
+    font-family: "Oswald";
+  }
 }
 .selection-form__filter-label {
   font-weight: normal;
@@ -35,6 +39,19 @@
   font-weight: normal;
   font-size: 24px;
   line-height: 26px;
+  padding-bottom: 20px;
+  display: block;
+}
+.selection-form__message-text {
+  padding: 10px 15px;
+  &::placeholder {
+    color: @dark-gray;
+    font-family: "Oswald";
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
 }
 .selection-form__item-contacts {
   font-weight: normal;

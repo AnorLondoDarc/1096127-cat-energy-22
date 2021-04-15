@@ -4,4 +4,33 @@
   align-content: start;
   min-width: 320px;
   min-height: 100%;
+  position: relative;
+}
+.green-cat {
+  &::before {
+    content: "";
+    position: absolute;
+    background-image: url(../../img/cat-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 320px 302px;
+    background-position: 0 0;
+    width: 320px;
+    height: 302px;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -2;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: @green;
+    width: 320px;
+    height: 302px;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    opacity: .7;
+  }
 }

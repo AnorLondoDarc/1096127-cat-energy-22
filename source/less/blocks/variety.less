@@ -3,29 +3,78 @@
   margin: 0;
   padding: 0;
 }
-.variety__img-wrap {
-  background-color: @green;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
 .variety__item {
   background-color: @verylight-gray;
   margin: 0;
   padding: 20px;
   margin-bottom: 20px;
+  position: relative;
 }
-.variety__title--h2 {
+.variety__item--sid {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: @green;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 22px;
+    top: 20px;
+  }
+  &::after {
+    content:"";
+    position: absolute;
+    background-image: url(../../img/panter-sid.svg);
+    background-size: 36px 50px;
+    background-repeat: no-repeat;
+    width: 36px;
+    height: 50px;
+    background-position: 0 0;
+    top: 20px;
+    left: 22px;
+  }
+}
+.variety__item--stand {
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: @green;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    left: 22px;
+    top: 20px;
+  }
+  &::after {
+    content:"";
+    position: absolute;
+    background-image: url(../../img/panter-stand.svg);
+    background-size: 67px 28px;
+    background-repeat: no-repeat;
+    width: 67px;
+    height: 28px;
+    background-position: 0 0;
+    top: 32px;
+    left: 15px;
+  }
+}
+.variety h2 {
   font-weight: normal;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  padding-left: 80px;
+  margin-bottom: 29px;
 }
 .variety__text {
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
-  font-family: "Arial" sans-serif;
+  font-family: "Arial", sans-serif;
   color:@dark-gray;
 }
 .variety__link {
