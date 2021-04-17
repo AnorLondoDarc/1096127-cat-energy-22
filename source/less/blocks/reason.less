@@ -6,10 +6,30 @@
 .reason__list {
   list-style: none;
   padding: 0;
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 }
 .reason__item {
   margin: 0;
   padding: 0;
+  margin-bottom: 20px;
+  @media (min-width: @tablet-width) {
+    width: 230px;
+    margin-right: 153px;
+    margin-bottom: 37px;
+    &:nth-child(2n){
+      margin-right: 0;
+    }
+  }
+  @media (min-width: @desktop-width) {
+    margin-right: 97px;
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
 }
 .reason__item--leaf {
   padding-left: 80px;

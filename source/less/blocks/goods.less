@@ -1,15 +1,27 @@
 .goods {
   margin-bottom: 5px;
 }
-.goods__title--h2 {
+.goods h2 {
   font-weight: normal;
   font-size: 24px;
   line-height: 24px;
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 .goods__list-wrapper {
   list-style: none;
   margin: 0;
   padding: 0;
+  @media (min-width: @tablet-width) {
+    padding: 28px 36px;
+    width: 708px;
+  }
+  @media (min-width: @desktop-width) {
+    padding: 0;
+    width: 896px;
+  }
 
 }
 .goods__title {
@@ -18,9 +30,23 @@
   line-height: 16px;
   text-transform: uppercase;
 }
+.goods__title--name {
+  @media (min-width: @tablet-width) {
+    display: flex;
+  }
+}
 .goods__list {
   display: flex;
   justify-content: space-between;
+  @media (min-width: @tablet-width) {
+    justify-content: end;
+  }
+}
+goods__name-wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .goods__meaning {
   font-weight: normal;
@@ -34,8 +60,20 @@
   line-height: 14px;
   color: @dark-gray;
 }
+.goods__link--button {
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+  @media (min-width: @desktop-width) {
+    width: 244px;
+  }
+}
 .goods__item {
   margin-bottom: 18px;
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .goods__item:last-child {
   margin-bottom: 60px;

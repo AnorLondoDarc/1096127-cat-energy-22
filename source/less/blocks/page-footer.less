@@ -1,6 +1,4 @@
-.page-footer__wrapper {
-  padding: 28px 0;
-}
+
 .page-footer__map-title {
   font-weight: normal;
   font-size: 16px;
@@ -22,11 +20,19 @@
   background-color: @light-gray;
 }
 .page-footer__wrapper {
+  padding: 28px 0;
   display: flex;
   justify-content: space-between;
   align-items: start;
 }
 .page-footer__map-img {
   display: block;
+  margin: 0 auto;
+  height: 382px;
 }
-
+.page-footer__socials {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}

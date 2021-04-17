@@ -1,11 +1,37 @@
-.selection__title--h1 {
+.selection {
+  @media (min-width: @tablet-width) {
+    margin-bottom: 72px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 82px;
+  }
+}
+.selection h1 {
   font-weight: normal;
   font-size: 36px;
   line-height: 36px;
+  margin-bottom: 37px;
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 76px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 56px;
+  }
 }
 .selection__text {
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
+  margin-bottom: 39px;
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 44px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 66px;
+  }
 }
