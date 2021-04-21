@@ -1,3 +1,11 @@
+.selection-form {
+  @media (min-width: @tablet-width) {
+    width: 630px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
+}
 .selection-form__fieldset {
   border:none;
   padding: 0;
@@ -27,6 +35,20 @@
     color: @dark-gray;
     font-family: "Oswald";
   }
+  @media (min-width: @tablet-width) {
+    width: 100%;
+  }
+}
+.selection-form__fieldset-wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.selection-form__fieldset--optional {
+  @media (min-width: @desktop-width) {
+    width: 568px;
+  }
 }
 .selection-form__filter-label {
   font-weight: normal;
@@ -41,6 +63,16 @@
   line-height: 26px;
   padding-bottom: 20px;
   display: block;
+  @media (min-width: @tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+.selection-form__address-wrapper {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 .selection-form__message-text {
   padding: 10px 15px;
@@ -53,15 +85,41 @@
     text-transform: uppercase;
   }
 }
+.selection-form__other-wrapper {
+  @media (min-width: @tablet-width) {
+    width: 565px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  @media (min-width: @desktop-width) {
+    width: 1220px;
+  }
+}
+.selection-form__other-item {
+  @media (min-width: @tablet-width) {
+    width: 310px;
+    display: block;
+  }
+}
 .selection-form__item-contacts {
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
 }
+.selection-form__submit-wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
 .selection-form__submit-btn {
   border:none;
   padding: 15px;
+  @media (min-width: @desktop-width) {
+    width: 568px;
+  }
 }
 .selection-form__require {
   font-weight: normal;
