@@ -31,7 +31,7 @@
           <h1 class="catalog-title">Каталог продукции</h1>
           <ul class="catalog__list">
             <li class="catalog__item">
-              <div class="catalog__detall-wrap">
+              <div class="catalog__details-wrap">
                 <div class="catalog__img-wrap">
                   <img class="catalog__img" src="img/catalog-img/pro-chicken-500.png" alt="" width="68" height="86">
                 </div>
@@ -56,7 +56,7 @@
               <a class="catalog__link catalog__link--button button" href="#">Заказать</a>
             </li>
             <li class="catalog__item">
-              <div class="catalog__detall-wrap">
+              <div class="catalog__details-wrap">
                 <div class="catalog__img-wrap">
                   <img class="catalog__img" src="img/catalog-img/pro-chicken-1000.png" alt="" width="84" height="100">
                 </div>
@@ -81,7 +81,7 @@
               <a class="catalog__link catalog__link--button button" href="#">Заказать</a>
             </li>
             <li class="catalog__item">
-              <div class="catalog__detall-wrap">
+              <div class="catalog__details-wrap">
                 <div class="catalog__img-wrap">
                   <img class="catalog__img" src="img/catalog-img/pro-fish-500.png" alt="" width="68" height="78">
                 </div>
@@ -106,7 +106,7 @@
               <a class="catalog__link catalog__link--button button" href="#">Заказать</a>
             </li>
             <li class="catalog__item">
-              <div class="catalog__detall-wrap">
+              <div class="catalog__details-wrap">
                 <div class="catalog__img-wrap">
                   <img class="catalog__img" src="img/catalog-img/pro-fish-1000.png" alt="" width="84" height="100">
                 </div>
@@ -131,7 +131,7 @@
               <a class="catalog__link catalog__link--button button" href="#">Заказать</a>
             </li>
             <li class="catalog__item">
-              <div class="catalog__detall-wrap">
+              <div class="catalog__details-wrap">
                 <div class="catalog__img-wrap">
                   <img class="catalog__img" src="img/catalog-img/slim-buck-500.png" alt="" width="68" height="78">
                 </div>
@@ -156,7 +156,7 @@
               <a class="catalog__link catalog__link--button button" href="#">Заказать</a>
             </li>
             <li class="catalog__item">
-              <div class="catalog__detall-wrap">
+              <div class="catalog__details-wrap">
                 <div class="catalog__img-wrap">
                   <img class="catalog__mg" src="img/catalog-img/slim-buck-1000.png" alt="" width="84" height="100">
                 </div>
@@ -181,7 +181,7 @@
               <a class="catalog__link catalog__link--button button" href="#">Заказать</a>
             </li>
             <li class="catalog__item">
-              <div class="catalog__detall-wrap">
+              <div class="catalog__details-wrap">
                 <div class="catalog__img-wrap">
                   <img class="catalog__img" src="img/catalog-img/rice.png" alt="" width="72" height="84">
                 </div>
@@ -205,15 +205,17 @@
               </div>
               <a class="catalog__link catalog__link--button button" href="#">Заказать</a>
             </li>
+            <li class="catalog__item">
+              <section class="catalog__show">
+                <div class="catalog__img-wrap catalog__img-wrap--more">
+                  <img class="catalog__img-show" src="img/catalog-img/plus.svg" alt="" width="30" height="30">
+                </div>
+                <h3 class="catalog__sub-heading">Показать еще 100500 товаров</h3>
+                <p class="catalog__text">На самом деле вкусов гораздо больше!</p>
+                <a class="catalog__link catalog__link--more" href="#">Показать все</a>
+              </section>
+            </li>
           </ul>
-          <section class="catalog__show">
-            <div class="catalog__img-wrap catalog__img-wrap--more">
-              <img class="catalog__img-show" src="img/catalog-img/plus.svg" alt="" width="30" height="30">
-            </div>
-            <h3 class="catalog__sub-heading">Показать еще 100500 товаров</h3>
-            <p class="catalog__text">На самом деле вкусов гораздо больше!</p>
-            <a class="catalog__link catalog__link--more" href="#">Показать все</a>
-          </section>
         </div>
       </section>
       <section class="goods">
@@ -268,7 +270,8 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="container page-footer--secondary-pages">
+      <div class="page-footer--secondary-pages">
+      <div class="container">
         <h2 class="visually-hidden">Карта с адресом</h2>
         <section class="page-footer__map">
           <div class="page-footer__wrapper">
@@ -277,12 +280,14 @@
           </div>
         </section>
       </div>
+    </div>
       <div class="container-map">
         <div class="page-footer__map-wrap">
           <img class="page-footer__map-img" src="img/map-mobile.jpg" alt="карта" width="320" height="362">
         </div>
       </div>
-      <div class="container page-footer-bg">
+      <div class="page-footer-bg">
+      <div class="container">
         <section class="page-footer__socials socials">
           <div class="socials__logo"><a class="page-footer__logo-title"><img src="img/logo-title.svg" alt="logo" class="page-footer__logo-img-title" width="101" height="18" ></a></div>
           <div class="socials__social-wrapper">
@@ -320,6 +325,7 @@
           </section>
         </section>
       </div>
+    </div>
     </footer>
   </body>
 </html>

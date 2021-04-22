@@ -33,20 +33,20 @@
           <form class="selection-form selection__form" method="get" action="https://echo.htmlacademy.ru">
             <div class="selection-form__fieldset-wrapper">
             <fieldset class="selection-form__fieldset selection-form__fieldset--optional">
-              <p class="selection-form__item">
+              <p class="selection-form__item selection-form__item--name">
                 <label class="label selection-form__label" for="meeting-name">Имя:*</label>
                 <input type="text" class="input selection-form__input" id="meeting-name" name="name" placeholder="барсик">
               </p>
-              <p class="selection-form__item">
+              <p class="selection-form__item selection-form__item--weight">
                 <label class="selection-form__label" for="meeting-width">Вес (кг):*</label>
                 <input type="text" class="selection-form__input selection-input" id="meeting-width" name="width" placeholder="7">
               </p>
-              <p class="selection-form__item">
+              <p class="selection-form__item selection-form__item--age">
                 <label class="selection-form__label" for="meeting-age">Возраст (лет):</label>
                 <input type="text" class="selection-form__input selection-input" id="meeting-age" name="age" placeholder="7">
               </p>
             </fieldset>
-            <fieldset class="selection-form__fieldset selection-form__fieldset--optional">
+            <fieldset class="selection-form__fieldset selection-form__fieldset--optional selection-form__fieldset--radio">
               <p class="selection-form__filter">
                 <input type="radio" class="selection-form__radio" name="option" value="похудение" id="thin" checked>
                 <label for="thin" class="selection-form__filter-label">Похудение</label>
@@ -66,12 +66,12 @@
                 <span class="selection-form__text">Контактные данные (владельца кота)</span>
               </legend>
               <div class="selection-form__address-wrapper">
-              <p class="selection-form__item-contacts">
+              <p class="selection-form__item-contacts selection-form__item-contacts--mail">
                 <label for="mail" class="selection-form__mail">E-mail:*</label>
                 <input type="email" class="selection-form__mail-input selection-form__input" id="mail" name="mail" placeholder="kuklachev@gmail.com">
               </p>
-              <p class="selection-form__item-contacts">
-                <label for="phone" class="selection-form__phone">Телефон:*</label>
+              <p class="selection-form__item-contacts selection-form__item-contacts--phone">
+                <label for="phone" class="selection-form__mail">Телефон:*</label>
                 <input type="tel" class="selection-form__phone-input selection-form__input" id="phone" name="tel" placeholder="8 (960) 900-60-90">
               </p>
             </div>
@@ -115,7 +115,8 @@
       </section>
     </main>
     <footer class="page-footer">
-      <div class="container page-footer--secondary-pages">
+      <div class="page-footer--secondary-pages">
+      <div class="container">
         <h2 class="visually-hidden">Карта с адресом</h2>
         <section class="page-footer__map">
           <div class="page-footer__wrapper">
@@ -124,12 +125,14 @@
           </div>
         </section>
       </div>
+    </div>
       <div class="container-map">
         <div class="page-footer__map-wrap">
           <img class="page-footer__map-img" src="img/map-mobile.jpg" alt="карта" width="320" height="362">
         </div>
       </div>
-      <div class="container page-footer-bg">
+      <div class="page-footer-bg">
+      <div class="container">
         <section class="page-footer__socials socials">
           <div class="socials__logo"><a class="page-footer__logo-title"><img src="img/logo-title.svg" alt="logo" class="page-footer__logo-img-title" width="101" height="18" ></a></div>
           <div class="socials__social-wrapper">
@@ -167,6 +170,7 @@
           </section>
         </section>
       </div>
+    </div>
     </footer>
   </body>
 </html>

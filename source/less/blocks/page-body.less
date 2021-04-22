@@ -10,42 +10,24 @@
   &::before {
     content: "";
     position: absolute;
-    background-image: url(../../img/cat-background.jpg);
+
+    background-image: linear-gradient(@green-top, @green-top), url(../../img/cat-background.jpg);
     background-repeat: no-repeat;
     background-size: 320px 302px;
     background-position: 0 0;
     width: 320px;
     height: 302px;
     top: 50px;
-    left: 50%;
-    transform: translateX(-50%);
+    right: 50%;
+    transform: translateX(50%);
     z-index: -2;
     @media (min-width: @tablet-width) {
       display: none;
     }
     @media (min-width: @desktop-width) {
+      background-blend-mode: multiply;
+      background-color: @green;
       right:0;
-      top: 0;
-      width: 50vw;
-      display: block;
-    }
-  }
-  &::after {
-    content: "";
-    position: absolute;
-    background-color: @green;
-    width: 320px;
-    height: 302px;
-    top: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: -1;
-    opacity: .7;
-    @media (min-width: @tablet-width) {
-      display: none;
-    }
-    @media (min-width: @desktop-width) {
-      right: 0;
       top: 0;
       width: 50vw;
       display: block;
