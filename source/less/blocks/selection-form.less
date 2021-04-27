@@ -1,4 +1,5 @@
 .selection-form {
+  margin-bottom: 32px;
   @media (min-width: @tablet-width) {
     width: 630px;
   }
@@ -63,6 +64,12 @@
   color: @dark-gray;
   border: 1px solid @light-gray;
   padding:14px 0 14px 13px;
+  &:hover {
+    border: 1px solid @gray;
+  }
+  &:invalid {
+    border: 1px solid @error-red;
+  }
   &::placeholder {
     color: @dark-gray;
     font-family: "Oswald";
@@ -83,13 +90,48 @@
     padding: 30px 28px;
   }
 }
+.selection-form__filter {
+  margin-bottom: 19px;
+  position: relative;
+}
 .selection-form__fieldset--radio {
   @media (min-width: @desktop-width) {
     border: 2px solid @light-gray;
   }
 }
-.selection-form__filter {
-  margin-bottom: 19px;
+.selection-form__radio {
+  &+label::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top:0;
+    left: 0;
+    border-radius: 50%;
+    border: 1px solid @gray;
+  }
+  &:checked+label::after {
+    content: "";
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 9px;
+    left: 9px;
+    border-radius: 50%;
+    background-color: @green;
+  }
+  &+label:hover::before {
+    border:1px solid @gray-hover;
+  }
+  &+label:hover::after {
+    background-color: @dark-green;
+  }
+}
+.selection-form__filter label {
+  cursor: pointer;
+}
+.selection-form__radio:disabled+label {
+  opacity: .3;
 }
 .selection-form__filter-label {
   font-weight: normal;
@@ -97,6 +139,7 @@
   line-height: 18px;
   text-transform: uppercase;
   color: @dark-gray;
+  margin-left: 40px;
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
@@ -105,6 +148,7 @@
 }
 .selection-form__text {
   font-weight: normal;
+  position: relative;
   font-size: 24px;
   line-height: 26px;
   padding-bottom: 20px;
@@ -179,9 +223,45 @@
   }
 }
 .selection-form__other-item {
+  position: relative;
+  margin-bottom: 20px;
   @media (min-width: @tablet-width) {
     display: block;
   }
+}
+.selection-form__other-label {
+  margin-left: 50px;
+}
+.selection-form__other-item label {
+  cursor: pointer;
+}
+.selection-form__other-input {
+  &+label::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 0;
+    top: -3px;
+    border: 1px solid @gray;
+  }
+  &:checked+label::after {
+    content: "";
+    position: absolute;
+    background-image: url(../../img/check-icon.svg);
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 14px;
+    left: 5px;
+    top: 5px;
+  }
+  &+label:hover::before,
+  &+label:focus::before {
+    border:1px solid @gray-hover;
+  }
+}
+.selection-form__other-input:disabled+label {
+  opacity: .3;
 }
 .selection-form__submit-wrapper {
   @media (min-width: @tablet-width) {
@@ -192,6 +272,7 @@
 .selection-form__submit-btn {
   border:none;
   padding: 15px;
+  margin-bottom: 21px;
   @media (min-width: @desktop-width) {
     width: 568px;
   }
@@ -200,4 +281,5 @@
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
+  text-align: center;
 }
