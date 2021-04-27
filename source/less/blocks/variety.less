@@ -40,6 +40,20 @@
     border-radius: 50%;
     left: 22px;
     top: 20px;
+    @media (min-width: @tablet-width) {
+      width: 200px;
+      height: 200px;
+      right: 62px;
+      left: auto;
+      top: 92px;
+    }
+    @media (min-width: @desktop-width) {
+      width: 100px;
+      height: 100px;
+      right: auto;
+      left: 52px;
+      top: 47px;
+    }
   }
   &::after {
     content:"";
@@ -52,6 +66,22 @@
     background-position: 0 0;
     top: 20px;
     left: 22px;
+    @media (min-width: @tablet-width) {
+      background-size: 140px 192px;
+      width: 140px;
+      height: 192px;
+      right: 92px;
+      left: auto;
+      top: 81px;
+    }
+    @media (min-width: @desktop-width) {
+      width: 70px;
+      height: 97px;
+      background-size: 70px 97px;
+      right: auto;
+      left: 67px;
+      top: 41px;
+    }
   }
 }
 .variety__item--stand {
@@ -65,6 +95,20 @@
     border-radius: 50%;
     left: 22px;
     top: 20px;
+    @media (min-width: @tablet-width) {
+      width: 200px;
+      height: 200px;
+      right: 62px;
+      left: auto;
+      top: 92px;
+    }
+    @media (min-width: @desktop-width) {
+      width: 100px;
+      height: 100px;
+      right: auto;
+      left: 52px;
+      top: 47px;
+    }
   }
   &::after {
     content:"";
@@ -77,6 +121,22 @@
     background-position: 0 0;
     top: 32px;
     left: 15px;
+    @media (min-width: @tablet-width) {
+      background-size: 268px 112px;
+      width: 268px;
+      height: 112px;
+      right: 27px;
+      left: auto;
+      top: 135px;
+    }
+    @media (min-width: @desktop-width) {
+      width: 134px;
+      height: 56px;
+      background-size: 134px 56px;
+      right: auto;
+      left: 32px;
+      top: 67px;
+    }
   }
 }
 .variety h2 {
@@ -95,10 +155,12 @@
   }
   @media (min-width: @desktop-width) {
     text-align: center;
+    margin-bottom: 73px;
   }
 }
 .variety__text {
   font-weight: normal;
+  margin-bottom: 42px;
   font-size: 14px;
   line-height: 18px;
   font-family: "Arial", sans-serif;
@@ -106,12 +168,34 @@
   @media (min-width: @tablet-width) {
     width: 377px;
   }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 23px;
+  }
 }
 .variety__link {
+  position: relative;
   font-weight: normal;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
   color:inherit;
   text-decoration: none;
+  &:hover,
+  &focus {
+    opacity: .9;
+  }
+  &:active {
+    opacity: .5;
+  }
+  &::before {
+    content: "";
+    position:absolute;
+    background-position: 0 0;
+    background-image: url(../../img/arrow.png);
+    width: 24px;
+    height: 12px;
+    left: 100px;
+    top: 5px;
+    background-repeat: no-repeat;
+  }
 }

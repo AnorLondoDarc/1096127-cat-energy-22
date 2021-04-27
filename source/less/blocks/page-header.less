@@ -6,4 +6,21 @@
     display: flex;
     justify-content: space-between;
   }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 30px;
+  }
+}
+.page-header__logo {
+  width: 191px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 11px;
+  &:hover,
+  &:focus {
+    opacity: .8;
+  }
+  &:active {
+    opacity: .5;
+  }
 }

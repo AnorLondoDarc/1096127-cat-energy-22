@@ -7,6 +7,22 @@
   height: 289px;
   padding-top: 168px;
   position: relative;
+  @media (min-resolution: 2dppx) {
+    background-image: url(../../img/catalog-img/gift-bg@2x.jpg);
+  }
+  @media (min-width: @tablet-width) {
+    background-image: url(../../img/catalog-img/gift-bg-tablet.jpg);
+    width: auto;
+    height: 200px;
+    @media (min-resolution: 2dppx) {
+      background-image: url(../../img/catalog-img/gift-bg-tablet@2x.jpg);
+    }
+  }
+  @media (min-width: @desktop-width) {
+    background-image: url(../../img/catalog-img/gift-bg.jpg);
+    width: 245px;
+    height: 289px;
+  }
   &::before {
     content: "";
     background-image: url(../../img/catalog-img/icon_gift.svg);

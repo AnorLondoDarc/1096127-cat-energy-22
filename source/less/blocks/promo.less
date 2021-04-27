@@ -1,7 +1,14 @@
 .promo {
-  padding-top: 27px;
-  margin-bottom: 22px;
+  margin-bottom: 30px;
+  @media (min-width: @tablet-width) {
+    padding-top: 50px;
+    margin-bottom: 550px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 300px;
+  }
 }
+
 .promo h1 {
   font-weight: normal;
   font-size: 36px;
@@ -19,11 +26,50 @@
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 320px;
   color:@white;
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
     color: @black;
+    margin-bottom: 49px;
+  }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 52px;
+  }
+}
+.page-header__logo-img-title {
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+.page-header__logo-img {
+  @media (min-width: @tablet-width) {
+    width: 174px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 201px;
+  }
+}
+.promo__wrapper {
+  position: relative;
+}
+.promo__img-wrapper {
+  position: absolute;
+  width: 280px;
+  height: 230px;
+  top: 150px;
+  @media (min-width: @tablet-width) {
+    width: 709px;
+    height: 609px;
+    z-index: -1;
+    top: 230px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 552;
+    height: 499px;
+    left: 50%;
+    transform: translateX(-30%);
+    top: -30px;
   }
 }
