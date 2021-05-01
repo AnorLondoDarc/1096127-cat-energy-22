@@ -67,7 +67,7 @@
     right: 0;
     left: 0;
     z-index: 10;
-    min-height: 264px;
+    margin: 0 -20px;
   }
   .main-nav--nojs .main-nav__toggle {
     display: none;
@@ -159,9 +159,21 @@
   }
  }
 }
-
+.page-header__nav--index .site-list__item {
+  @media (min-width: @tablet-width) {
+    &::after {
+      background: @green;
+    }
+  }
+  @media (min-width: @desktop-width) {
+    &::after {
+      background: @white;
+    }
+  }
+}
 .site-list__item a[href] {
  @media (min-width: @tablet-width) {
+   &:focus,
    &:hover {
     opacity: .7;
    }

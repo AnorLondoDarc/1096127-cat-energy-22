@@ -10,16 +10,16 @@
     <header class="page-header">
       <div class="container page-header__nav">
         <div class="page-header__wrap">
-          <a class="logo page-header__logo">
+          <a class="logo page-header__logo" tabindex="0">
             <picture>
               <source media="(min-width: 1200px" srcset="img/logo-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-                 <img src="img/logo.svg" alt="logo" class="page-header__logo-img" width="34" height="38">
+              <img src="img/logo.svg" alt="logo" class="page-header__logo-img" width="34" height="38">
             </picture>
-              <img src="img/logo-title.svg" alt="logo" class="page-header__logo-img-title" width="101" height="18">
-            </a>
-          </div>
-        <nav class="main-nav nav--nojs main-nav--closed">
+            <img src="img/logo-title.svg" alt="logo" class="page-header__logo-img-title" width="101" height="18">
+          </a>
+        </div>
+        <nav class="main-nav main-nav--nojs main-nav--closed">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <div class="main-nav__wrapper">
             <ul class="main-nav__list site-list">
@@ -38,50 +38,54 @@
           <p class="selection__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
           <form class="selection-form selection__form" method="get" action="https://echo.htmlacademy.ru">
             <div class="selection-form__fieldset-wrapper">
-            <fieldset class="selection-form__fieldset selection-form__fieldset--optional">
-              <p class="selection-form__item selection-form__item--name">
-                <label class="label selection-form__label" for="meeting-name">Имя:*</label>
-                <input type="text" class="input selection-form__input" id="meeting-name" name="name" placeholder="барсик">
-              </p>
-              <p class="selection-form__item selection-form__item--weight">
-                <label class="selection-form__label" for="meeting-width">Вес (кг):*</label>
-                <input type="text" class="selection-form__input selection-input" id="meeting-width" name="width" placeholder="7">
-              </p>
-              <p class="selection-form__item selection-form__item--age">
-                <label class="selection-form__label" for="meeting-age">Возраст (лет):</label>
-                <input type="text" class="selection-form__input selection-input" id="meeting-age" name="age" placeholder="7">
-              </p>
-            </fieldset>
-            <fieldset class="selection-form__fieldset selection-form__fieldset--optional selection-form__fieldset--radio">
-              <p class="selection-form__filter">
-                <input type="radio" class="visually-hidden selection-form__radio" name="option" value="похудение" id="thin" checked>
-                <label for="thin" class="selection-form__filter-label">Похудение</label>
-              </p>
-              <p class="selection-form__filter">
-                <input type="radio" class="visually-hidden selection-form__radio" name="option" value="Набор массы" id="bold">
-                <label for="bold" class="selection-form__filter-label">Набор массы</label>
-              </p>
-              <p class="selection-form__filter">
-                <input type="radio" class="visually-hidden selection-form__radio" name="option" value="Не знаю" id="quest">
-                <label for="quest" class="selection-form__filter-label">Не знаю (Нужен ваш совет)</label>
-              </p>
-            </fieldset>
-          </div>
+              <fieldset class="selection-form__fieldset selection-form__fieldset--optional">
+                <p class="selection-form__item selection-form__item--name">
+                  <label class="label selection-form__label" for="meeting-name">Имя:*</label>
+                  <input type="text" class="input selection-form__input" id="meeting-name" name="name" placeholder="барсик">
+                </p>
+                <p class="selection-form__item selection-form__item--weight">
+                  <label class="selection-form__label" for="meeting-width">Вес (кг):*</label>
+                  <input type="text" class="selection-form__input selection-input" id="meeting-width" name="width" placeholder="7">
+                </p>
+                <p class="selection-form__item selection-form__item--age">
+                  <label class="selection-form__label" for="meeting-age">Возраст (лет):</label>
+                  <input type="text" class="selection-form__input selection-input" id="meeting-age" name="age" placeholder="7">
+                </p>
+              </fieldset>
+              <fieldset class="selection-form__fieldset selection-form__fieldset--optional selection-form__fieldset--radio">
+                <p class="selection-form__filter">
+                  <input type="radio" class="visually-hidden selection-form__radio" name="option" value="похудение" id="thin" checked>
+                  <label for="thin" class="selection-form__filter-label">Похудение</label>
+                </p>
+                <p class="selection-form__filter">
+                  <input type="radio" class="visually-hidden selection-form__radio" name="option" value="Набор массы" id="bold">
+                  <label for="bold" class="selection-form__filter-label">Набор массы</label>
+                </p>
+                <p class="selection-form__filter">
+                  <input type="radio" class="visually-hidden selection-form__radio" name="option" value="Не знаю" id="quest">
+                  <label for="quest" class="selection-form__filter-label">Не знаю (Нужен ваш совет)</label>
+                </p>
+              </fieldset>
+            </div>
+          </form>
+          <form class="selection-form selection__form" method="get" action="https://echo.htmlacademy.ru">
             <fieldset class="selection-form__fieldset">
               <legend class="selection-form__legend">
                 <span class="selection-form__text">Контактные данные (владельца кота)</span>
               </legend>
               <div class="selection-form__address-wrapper">
-              <p class="selection-form__item-contacts selection-form__item-contacts--mail">
-                <label for="mail" class="selection-form__mail">E-mail:*</label>
-                <input type="email" class="selection-form__mail-input selection-form__input" id="mail" name="mail" placeholder="kuklachev@gmail.com">
-              </p>
-              <p class="selection-form__item-contacts selection-form__item-contacts--phone">
-                <label for="phone" class="selection-form__mail">Телефон:*</label>
-                <input type="tel" class="selection-form__phone-input selection-form__input" id="phone" name="tel" placeholder="8 (960) 900-60-90">
-              </p>
-            </div>
+                <p class="selection-form__item-contacts selection-form__item-contacts--mail">
+                  <label for="mail" class="selection-form__mail">E-mail:*</label>
+                  <input type="email" class="selection-form__mail-input selection-form__input" id="mail" name="mail" placeholder="kuklachev@gmail.com">
+                </p>
+                <p class="selection-form__item-contacts selection-form__item-contacts--phone">
+                  <label for="phone" class="selection-form__mail">Телефон:*</label>
+                  <input type="tel" class="selection-form__phone-input selection-form__input" id="phone" name="tel" placeholder="8 (960) 900-60-90">
+                </p>
+              </div>
             </fieldset>
+          </form>
+          <form class="selection-form selection__form" method="get" action="https://echo.htmlacademy.ru">
             <fieldset class="selection-form__fieldset">
               <legend class="selection-form__legend">
                 <span class="selection-form__text">Комментарий</span>
@@ -89,56 +93,58 @@
               <label class="selection-form__message" for="post"></label>
               <textarea class="selection-form__message-text" rows="10" cols="34" name="text" id="post" placeholder="Расскажите обо всех повАдках кота"></textarea>
             </fieldset>
+          </form>
+          <form class="selection-form selection__form" method="get" action="https://echo.htmlacademy.ru">
             <fieldset class="selection-form__fieldset">
               <legend class="selection-form__legend">
                 <span class="selection-form__text">Дополнительно</span>
               </legend>
               <div class="selection-form__other-wrapper">
-              <p class="selection-form__other-item">
-                <input class="visually-hidden selection-form__other-input" type="checkbox" name="sugar" id="sugar" checked>
-                <label class="selection-form__other-label selection-form__label" for="sugar">Сахарозаменитель</label>
-              </p>
-              <p class="selection-form__other-item">
-                <input class="visually-hidden selection-form__other-input" type="checkbox" name="water" id="water">
-                <label class="selection-form__other-label selection-form__label" for="water">Питьевая вода</label>
-              </p>
-              <p class="selection-form__other-item">
-                <input class="visually-hidden selection-form__other-input" type="checkbox" name="milk" id="milk">
-                <label class="selection-form__other-label selection-form__label" for="milk">Молоко</label>
-              </p>
-              <p class="selection-form__other-item">
-                <input class="visually-hidden selection-form__other-input" type="checkbox" name="vitamins" id="vitamins">
-                <label class="selection-form__other-label selection-form__label" for="vitamins">Витамины</label>
-              </p>
-            </div>
+                <p class="selection-form__other-item">
+                  <input class="visually-hidden selection-form__other-input" type="checkbox" name="sugar" id="sugar" checked>
+                  <label class="selection-form__other-label selection-form__label" for="sugar">Сахарозаменитель</label>
+                </p>
+                <p class="selection-form__other-item">
+                  <input class="visually-hidden selection-form__other-input" type="checkbox" name="water" id="water">
+                  <label class="selection-form__other-label selection-form__label" for="water">Питьевая вода</label>
+                </p>
+                <p class="selection-form__other-item">
+                  <input class="visually-hidden selection-form__other-input" type="checkbox" name="milk" id="milk">
+                  <label class="selection-form__other-label selection-form__label" for="milk">Молоко</label>
+                </p>
+                <p class="selection-form__other-item">
+                  <input class="visually-hidden selection-form__other-input" type="checkbox" name="vitamins" id="vitamins">
+                  <label class="selection-form__other-label selection-form__label" for="vitamins">Витамины</label>
+                </p>
+              </div>
             </fieldset>
             <div class="selection-form__submit-wrapper">
-            <button class="selection-form__submit-btn button" type="submit">Отправить заявку</button>
-            <p class="selection-form__require">* — Обязательные поля</p>
-          </div>
+              <button class="selection-form__submit-btn button" type="submit">Отправить заявку</button>
+              <p class="selection-form__require">* — Обязательные поля</p>
+            </div>
           </form>
         </div>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer--secondary-pages">
-      <div class="container">
-        <h2 class="visually-hidden">Карта с адресом</h2>
-        <section class="page-footer__map">
-          <div class="page-footer__wrapper">
-            <h3 class="page-footer__map-title">Приглашаем к сотрудничеству дилеров!</h3>
-            <p class="page-footer__map-text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
-          </div>
-        </section>
-      </div>
-    </div>
-        <div class="page-footer__map-wrap">
-          <picture>
-            <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x 2x" >
-            <img class="page-footer__map-img" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg" alt="карта">
-          </picture>
+        <div class="container">
+          <h2 class="visually-hidden">Карта с адресом</h2>
+          <section class="page-footer__map">
+            <div class="page-footer__wrapper">
+              <h3 class="page-footer__map-title">Приглашаем к сотрудничеству дилеров!</h3>
+              <p class="page-footer__map-text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+            </div>
+          </section>
         </div>
+      </div>
+      <div class="page-footer__map-wrap">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x 2x" >
+          <img class="page-footer__map-img" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg" alt="карта">
+        </picture>
+      </div>
       <div class="page-footer-bg">
         <div class="container">
           <section class="page-footer__socials socials">
@@ -163,7 +169,7 @@
                   <a class="footer-link" target="_blank" href="#">
                     <svg width="13" height="20" viewBox="0 0 13 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M11.5 0.833252H8.75001C7.53443 0.833252 6.36864 1.30674 5.5091 2.14957C4.64956 2.99239 4.16667 4.1355 4.16667 5.32743V8.02394H1.41667V11.6193H4.16667V18.81H7.83334V11.6193H10.5833L11.5 8.02394H7.83334V5.32743C7.83334 5.08905 7.92992 4.86042 8.10182 4.69186C8.27373 4.52329 8.50689 4.4286 8.75001 4.4286H11.5V0.833252Z" stroke="#666666" stroke-width="1.1" stroke-linecap="round" stroke-linejoin="round"/>
-                      </svg>
+                    </svg>
                   </a>
                 </li>
               </ul>
