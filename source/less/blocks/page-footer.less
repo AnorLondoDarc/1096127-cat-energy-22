@@ -6,6 +6,11 @@
   text-transform: uppercase;
   padding: 0;
   margin: 0;
+  @media (min-width: @desktop-width) {
+    display: flex;
+    width: 183px;
+    margin-right: 87px;
+  }
 }
 .page-footer__map-text {
   font-weight: normal;
@@ -19,11 +24,26 @@
 .page-footer--secondary-pages {
   background-color: @light-gray;
 }
+.page-footer__map {
+  @media (min-width: @desktop-width) {
+    position: relative;
+  }
+}
 .page-footer__wrapper {
   padding: 28px 0;
   display: flex;
   justify-content: space-between;
   align-items: start;
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    width: 570px;
+    height: 201px;
+    background-color: @white;
+    padding: 66px 78px;
+    top: 95px;
+    left: 0;
+    z-index: 1;
+  }
 }
 .page-footer__map-img {
   display: block;

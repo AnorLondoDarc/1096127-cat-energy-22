@@ -11,7 +11,6 @@
   border:none;
   padding: 0;
   margin: 0;
-  padding-bottom: 30px;
 }
 .selection-form__item {
   margin: 0;
@@ -82,21 +81,25 @@
   @media (min-width: @desktop-width) {
     display: flex;
     justify-content: space-between;
+    width: 1200px;
   }
 }
 .selection-form__fieldset--optional {
   @media (min-width: @desktop-width) {
-    width: 568px;
-    padding: 30px 28px;
+    width: 560px;
   }
 }
 .selection-form__filter {
   margin-bottom: 19px;
   position: relative;
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 .selection-form__fieldset--radio {
-  @media (min-width: @desktop-width) {
+  @media (min-width: @tablet-width) {
     border: 2px solid @light-gray;
+    padding: 25px 0 25px 28px;
   }
 }
 .selection-form__radio {
@@ -163,6 +166,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-column-gap: 78px;
+    width: 1200px;
   }
 }
 .selection-form__mail {
@@ -248,7 +252,7 @@
   &:checked+label::after {
     content: "";
     position: absolute;
-    background-image: url(../../img/check-icon.svg);
+    background-image: url(../img/check-icon.svg);
     background-repeat: no-repeat;
     width: 18px;
     height: 14px;
