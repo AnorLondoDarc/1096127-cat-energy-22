@@ -1,7 +1,6 @@
 .main-nav {
   position: relative;
   width: auto;
-  min-height: 51px;
 }
 .main-nav__toggle {
   position: absolute;
@@ -44,7 +43,6 @@
     height: 2px;
     background-color: @black;
   }
-
   &::before {
     transform: rotate(45deg);
     box-shadow: none;
@@ -80,13 +78,11 @@
   .main-nav--nojs .site-list__item {
     display: block;
   }
-
   .main-nav--nojs .site-list__item--active a {
     padding-right: 21px;
     padding-left: 21px;
     text-align: left;
   }
-
   .main-nav--nojs .user-list__item {
     display: block;
   }
@@ -95,8 +91,8 @@
   position: relative;
   display: block;
   text-align: center;
-  padding: 24px 21px;
-  padding-bottom: 24px;
+  padding: 22px 21px;
+  padding-bottom: 22px;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
@@ -108,8 +104,10 @@
   border-bottom: 1px solid @light-gray;
   @media (min-width: @tablet-width) {
     padding: 0;
-    padding-top: 25px;
+    padding-top: 28px;
     padding-bottom: 13px;
+    font-size: 18px;
+    line-height: 24px;
     background: none;
     border: none;
   }
@@ -134,19 +132,17 @@
 .main-nav__list {
   @media (min-width: @tablet-width) {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
   }
 }
 .site-list__item {
   @media (min-width: @tablet-width) {
-   margin-right: 32px;
-
+   margin-right: 30px;
    &:last-child {
      margin-right: 0;
    }
    &--current {
     position: relative;
-
     &::after {
       content: "";
       position: absolute;
@@ -177,7 +173,6 @@
    &:hover {
     opacity: .7;
    }
-
    &:active {
      opacity: 0.3;
    }

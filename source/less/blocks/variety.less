@@ -1,10 +1,10 @@
-.variety__inner {
-  margin-bottom: 27px;
+.variety {
+  margin-bottom: 24px;
   @media (min-width: @tablet-width) {
     margin-bottom: 45px;
   }
   @media (min-width: @desktop-width) {
-    margin-bottom: 70px;
+    margin-bottom: 40px;
   }
 }
 .variety__list {
@@ -19,11 +19,13 @@
 .variety__item {
   background-color: @verylight-gray;
   padding: 20px;
-  margin-bottom: 20px;
+  padding-top: 30px;
+  margin-bottom: 18px;
   position: relative;
   @media (min-width: @tablet-width) {
-   min-height: 372px;
-   padding: 77px 52px 52px 52px;
+    min-height: 372px;
+    padding: 79px 52px 52px 50px;
+    margin-bottom: 30px;
   }
   @media (min-width: @desktop-width) {
     width: 570px;
@@ -38,7 +40,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    left: 22px;
+    left: 28px;
     top: 20px;
     @media (min-width: @tablet-width) {
       width: 200px;
@@ -65,7 +67,7 @@
     height: 50px;
     background-position: 0 0;
     top: 20px;
-    left: 22px;
+    left: 30px;
     @media (min-width: @tablet-width) {
       background-size: 140px 192px;
       width: 140px;
@@ -93,7 +95,7 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    left: 22px;
+    left: 25px;
     top: 20px;
     @media (min-width: @tablet-width) {
       width: 200px;
@@ -120,7 +122,7 @@
     height: 28px;
     background-position: 0 0;
     top: 32px;
-    left: 15px;
+    left: 17px;
     @media (min-width: @tablet-width) {
       background-size: 268px 112px;
       width: 268px;
@@ -146,7 +148,7 @@
   text-transform: uppercase;
   margin: 0;
   padding: 0;
-  padding-left: 80px;
+  padding-left: 75px;
   margin-bottom: 29px;
   @media (min-width: @tablet-width) {
     font-size: 36px;
@@ -154,22 +156,37 @@
     padding-left: 0;
   }
   @media (min-width: @desktop-width) {
-    text-align: center;
+    margin-left: 162px;
     margin-bottom: 73px;
   }
 }
 .variety__text {
   font-weight: normal;
-  margin-bottom: 42px;
+  margin-bottom: 15px;
+  padding-bottom: 23px;
   font-size: 14px;
   line-height: 18px;
   font-family: "Arial", sans-serif;
   color:@dark-gray;
+  border-bottom: 1px solid @gray;
   @media (min-width: @tablet-width) {
-    width: 377px;
+    width: 374px;
+    font-size: 16px;
+    line-height: 24px;
+    color: @black;
+    border: none;
+    margin-bottom: 48px;
+    padding: 0;
+    &:nth-child(2) {
+      width: 342px;
+    }
   }
   @media (min-width: @desktop-width) {
+    width: 100%;
     margin-bottom: 23px;
+    &:nth-child(2) {
+      width: 100%;
+    }
   }
 }
 .variety__link {
@@ -197,5 +214,13 @@
     left: 100px;
     top: 5px;
     background-repeat: no-repeat;
+    @media (min-width: @tablet-width) {
+      left: 130px;
+      top: 10px;
+    }
+  }
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }

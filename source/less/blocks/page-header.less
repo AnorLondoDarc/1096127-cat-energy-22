@@ -1,13 +1,19 @@
 .page-header {
   min-height: 65px;
+  @media (min-width: @tablet-width) {
+    margin-bottom: 25px;
+  }
 }
 .page-header__nav {
+  margin-bottom: 37px;
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
+    margin-top: 15px;
   }
   @media (min-width: @desktop-width) {
-    margin-bottom: 30px;
+    margin-bottom: 80px;
+    margin-top: 43px;
   }
 }
 .page-header__logo {
@@ -22,5 +28,16 @@
   }
   &:active {
     opacity: .5;
+  }
+  @media (min-width: @desktop-width) {
+    width: 200px;
+  }
+}
+.page-header__wrap {
+  @media (min-width: @tablet-width) {
+    margin-right: 78px;
+  }
+  @media (min-width: @desktop-width) {
+    width: 203px;
   }
 }
