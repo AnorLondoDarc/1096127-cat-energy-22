@@ -67,33 +67,44 @@
                 </p>
               </fieldset>
             </div>
+        </div>
             <fieldset class="selection-form__fieldset">
-              <legend class="selection-form__legend">
-                <span class="selection-form__text">Контактные данные (владельца кота)</span>
-              </legend>
-              <div class="selection-form__address-wrapper">
-                <p class="selection-form__item-contacts selection-form__item-contacts--mail">
-                  <label for="mail" class="selection-form__mail">E-mail:*</label>
-                  <input type="email" class="selection-form__mail-input selection-form__input" id="mail" name="mail" placeholder="kuklachev@gmail.com">
-                </p>
-                <p class="selection-form__item-contacts selection-form__item-contacts--phone">
-                  <label for="phone" class="selection-form__mail">Телефон:*</label>
-                  <input type="tel" class="selection-form__phone-input selection-form__input" id="phone" name="tel" placeholder="8 (960) 900-60-90">
-                </p>
+              <header class="selection-form__header">
+                <div class="container selection-form__title-wrap">
+                  <h2 class="selection-form__title">Контактные данные (владельца кота)</h2>
+                </div>
+              </header>
+              <div class="container">
+                <div class="selection-form__address-wrapper">
+                  <p class="selection-form__item-contacts selection-form__item-contacts--mail">
+                    <label for="mail" class="selection-form__mail">E-mail:*</label>
+                    <input type="email" class="selection-form__mail-input selection-form__input" id="mail" name="mail" placeholder="kuklachev@gmail.com">
+                  </p>
+                  <p class="selection-form__item-contacts selection-form__item-contacts--phone">
+                    <label for="phone" class="selection-form__mail">Телефон:*</label>
+                    <input type="tel" class="selection-form__phone-input selection-form__input" id="phone" name="tel" placeholder="8 (960) 900-60-90">
+                  </p>
+                </div>
               </div>
             </fieldset>
             <fieldset class="selection-form__fieldset">
-              <legend class="selection-form__legend">
-                <span class="selection-form__text">Комментарий</span>
-              </legend>
-              <label class="selection-form__message" for="post"></label>
-              <textarea class="selection-form__message-text" rows="10" cols="34" name="text" id="post" placeholder="Расскажите обо всех повАдках кота"></textarea>
+              <header class="selection-form__header">
+                <div class="container selection-form__title-wrap">
+                  <h2 class="selection-form__title">Комментарий</h2>
+                </div>
+              </header>
+              <div class="container">
+                <label class="selection-form__message" for="post"></label>
+                <textarea class="selection-form__message-text" name="text" id="post" placeholder="Расскажите обо всех повАдках кота"></textarea>
+              </div>
             </fieldset>
             <fieldset class="selection-form__fieldset">
-              <legend class="selection-form__legend">
-                <span class="selection-form__text">Дополнительно</span>
-              </legend>
-              <div class="selection-form__other-wrapper">
+              <header class="selection-form__header">
+                <div class="container selection-form__title-wrap">
+                  <h2 class="selection-form__title">Дополнительно</h2>
+                </div>
+              </header>
+              <div class="container selection-form__other-wrapper">
                 <p class="selection-form__other-item">
                   <input class="visually-hidden selection-form__other-input" type="checkbox" name="sugar" id="sugar" checked>
                   <label class="selection-form__other-label selection-form__label" for="sugar">Сахарозаменитель</label>
@@ -112,12 +123,11 @@
                 </p>
               </div>
             </fieldset>
-            <div class="selection-form__submit-wrapper">
+            <div class="container selection-form__submit-wrapper">
               <button class="selection-form__submit-btn button" type="submit">Отправить заявку</button>
               <p class="selection-form__require">* — Обязательные поля</p>
             </div>
           </form>
-        </div>
       </section>
     </main>
     <footer class="page-footer">
@@ -134,6 +144,9 @@
       </div>
       <div class="page-footer__map-wrap">
         <picture>
+          <source media="(min-width: 1200px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x" >
+          <source media="(min-width: 320px)" srcset="img/map.webp 1x, img/map@2x.webp 2x" >
           <source media="(min-width: 1200px)" srcset="img/map-desktop.jpg 1x, img/map-desktop@2x.jpg 2x">
           <source media="(min-width: 768px)" srcset="img/map-tablet.jpg 1x, img/map-tablet@2x 2x" >
           <img class="page-footer__map-img" src="img/map-mobile.jpg" srcset="img/map-mobile@2x.jpg" alt="карта">
@@ -180,6 +193,6 @@
         </div>
       </div>
     </footer>
-    <script src="js/script.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
