@@ -1,18 +1,30 @@
 .page-header {
   min-height: 65px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid @light-gray;
   @media (min-width: @tablet-width) {
-    margin-bottom: 25px;
+    margin-bottom: 53px;
+    border: none;
+  }
+  @media (min-width: @desktop-width) {
+    margin-bottom: 59px;
+  }
+}
+.page-header--hero {
+  border: none;
+  @media (min-width: @desktop-width) {
+    margin-bottom: 92px;
   }
 }
 .page-header__nav {
-  margin-bottom: 37px;
+  margin-bottom: 7px;
   @media (min-width: @tablet-width) {
     display: flex;
     justify-content: space-between;
     margin-top: 15px;
   }
   @media (min-width: @desktop-width) {
-    margin-bottom: 80px;
+    margin-bottom: 10px;
     margin-top: 43px;
   }
 }
@@ -39,5 +51,6 @@
   }
   @media (min-width: @desktop-width) {
     width: 203px;
+    padding-left: 5px;
   }
 }
