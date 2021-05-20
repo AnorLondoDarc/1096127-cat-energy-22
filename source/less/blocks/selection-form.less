@@ -341,13 +341,20 @@
     width: 100%;
   }
 }
-.selection-form__item-contacts .selectio-form__icon {
+.selection-form__item-contacts .selection-form__icon {
   position: absolute;
   right: 20px;
 }
-.selection-form__item-contacts:hover .selectio-form__icon,
-.selection-form__input:focus .selectio-form__icon {
-  stroke: @green;
+.selection-form__input:focus+ .selection-form__icon {
+  fill: @green;
+}
+.selection-form__item-contacts input:invalid+ .selection-form__icon {
+  fill: @error-red;
+}
+.selection-form__item--weight input:invalid,
+.selection-form__item--name input:invalid,
+.selection-form__item-contacts input:invalid {
+  color: @error-red;
 }
 .selection-form__message-wrap {
   padding-top: 20px;
