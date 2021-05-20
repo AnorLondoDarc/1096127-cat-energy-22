@@ -311,6 +311,7 @@
   }
 }
 .selection-form__item-contacts {
+  position: relative;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
@@ -339,6 +340,14 @@
   @media (min-width: @tablet-width) {
     width: 100%;
   }
+}
+.selection-form__item-contacts .selectio-form__icon {
+  position: absolute;
+  right: 20px;
+}
+.selection-form__item-contacts:hover .selectio-form__icon,
+.selection-form__input:focus .selectio-form__icon {
+  stroke: @green;
 }
 .selection-form__message-wrap {
   padding-top: 20px;
@@ -423,7 +432,7 @@
     left: 5px;
     top: 5px;
     @media (min-width: @tablet-width) {
-      left: 15px;
+      left: 12px;
       top: 8px;
     }
   }

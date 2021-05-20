@@ -11,6 +11,8 @@ const terser = require("gulp-terser");
 const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
+const posthtml = require("gulp-posthtml");
+const include = require("posthtml-include");
 const del = require("del");
 const sync = require("browser-sync").create();
 
@@ -38,8 +40,10 @@ exports.styles = styles;
 const html = () => {
   return gulp.src("source/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest("build"));
+    .pipe(gulp.dest("build"))
 }
+
+exports.html = html;
 
 // Scripts
 
@@ -159,9 +163,9 @@ const build = gulp.series(
   optimizeImages,
   gulp.parallel(
     styles,
+    sprite,
     html,
     scripts,
-    sprite,
     createWebp
   ),
 );
@@ -177,9 +181,9 @@ exports.default = gulp.series(
   copyImages,
   gulp.parallel(
     styles,
+    sprite,
     html,
     scripts,
-    sprite,
     createWebp
   ),
   gulp.series(
