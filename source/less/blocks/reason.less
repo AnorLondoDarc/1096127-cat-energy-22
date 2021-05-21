@@ -1,10 +1,28 @@
-.reason__inner {
-  margin-bottom: 20px;
+.reason {
+  position: relative;
+  margin-bottom: 47px;
   @media (min-width: @tablet-width) {
     margin-bottom: 47px;
+    &::before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      width: 100%;
+      background-color: @light-gray;
+      left: 0;
+      bottom: 0;
+    }
   }
   @media (min-width: @desktop-width) {
-    margin-bottom: 77px;
+    margin-bottom: 24px;
+    &::before {
+      display: none;
+    }
+  }
+}
+.reason__inner {
+  @media (min-width: @tablet-width) {
+    padding-bottom: 8px;
   }
 }
 .reason h2 {
@@ -12,6 +30,11 @@
   font-size: 36px;
   line-height: 40px;
   margin-bottom: 38px;
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 75px;
+  }
 }
 .reason__list {
   list-style: none;
@@ -19,8 +42,8 @@
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-column-gap: 153px;
-    grid-row-gap: 77px;
+    grid-column-gap: 58px;
+    grid-row-gap: 36px;
   }
   @media (min-width: @desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -30,21 +53,21 @@
 .reason__item {
   margin: 0;
   padding: 0;
-  margin-bottom: 20px;
-  padding-left: 80px;
+  margin-bottom: 25px;
+  padding-left: 81px;
   @media (min-width: @tablet-width) {
-   min-height: 280px;
-   width: 245px;
-   padding-top: 110px;
-   padding-left: 0;
-   margin-bottom: 0;
+    min-height: 280px;
+    width: 250px;
+    padding-top: 115px;
+    padding-left: 0;
+    margin-bottom: 0;
   }
 }
 .reason__item--leaf {
   position: relative;
   &::before {
     content: "";
-    background-image: url(../img/icons/leaf.svg);
+    background-image: url(../img/icons-img/leaf.svg);
     background-repeat: no-repeat;
     position: absolute;
     background-color: @green;
@@ -62,16 +85,16 @@
     @media (min-width: @tablet-width) {
       content: "";
       position: absolute;
-      background-image: url(../img/icons/one.png);
+      background-image: url(../img/icons-img/one.png);
       background-repeat: no-repeat;
-      background-size: 112px 280px;
-      width: 112px;
-      height: 280px;
+      background-size: 68px 226px;
+      width: 68px;
+      height: 226px;
       top: 0;
-      right: 0;
+      right: 50px;
       z-index: -1;
       @media (min-resolution: 2dppx) {
-        background-image: url(../img/icons/one@2x.png);
+        background-image: url(../img/icons-img/one@2x.png);
       }
     }
   }
@@ -80,7 +103,7 @@
   position: relative;
   &::before {
     content: "";
-    background-image: url(../img/icons/powder.svg);
+    background-image: url(../img/icons-img/powder.svg);
     background-repeat: no-repeat;
     position: absolute;
     background-color: @green;
@@ -98,16 +121,16 @@
     @media (min-width: @tablet-width) {
       content: "";
       position: absolute;
-      background-image: url(../img/icons/two.png);
+      background-image: url(../img/icons-img/two.png);
       background-repeat: no-repeat;
-      background-size: 134px 280px;
-      width: 134px;
-      height: 280px;
+      background-size: 103px 226px;
+      width: 103px;
+      height: 226px;
       top: 0;
-      right: 0;
+      right: 20px;
       z-index: -1;
       @media (min-resolution: 2dppx) {
-        background-image: url(../img/icons/two@2x.png);
+        background-image: url(../img/icons-img/two@2x.png);
       }
     }
   }
@@ -116,7 +139,7 @@
   position: relative;
   &::before {
     content: "";
-    background-image: url(../img/icons/eat.svg);
+    background-image: url(../img/icons-img/eat.svg);
     background-repeat: no-repeat;
     position: absolute;
     background-color: @green;
@@ -134,16 +157,16 @@
     @media (min-width: @tablet-width) {
       content: "";
       position: absolute;
-      background-image: url(../img/icons/three.png);
+      background-image: url(../img/icons-img/three.png);
       background-repeat: no-repeat;
-      background-size: 134px 280px;
-      width: 134px;
-      height: 280px;
+      background-size: 110px 226px;
+      width: 110px;
+      height: 226px;
       top: 0;
-      right: 0;
+      right: 15px;
       z-index: -1;
       @media (min-resolution: 2dppx) {
-        background-image: url(../img/icons/three@2x.png);
+        background-image: url(../img/icons-img/three@2x.png);
       }
     }
   }
@@ -152,7 +175,7 @@
   position: relative;
   &::before {
     content: "";
-    background-image: url(../img/icons/alarm.svg);
+    background-image: url(../img/icons-img/alarm.svg);
     background-repeat: no-repeat;
     position: absolute;
     background-color: @green;
@@ -170,16 +193,16 @@
     @media (min-width: @tablet-width) {
       content: "";
       position: absolute;
-      background-image: url(../img/icons/four.png);
+      background-image: url(../img/icons-img/four.png);
       background-repeat: no-repeat;
-      background-size: 136px 280px;
-      width: 136px;
-      height: 280px;
+      background-size: 113px 226px;
+      width: 113px;
+      height: 226px;
       top: 0;
-      right: 0;
+      right: 10px;
       z-index: -1;
       @media (min-resolution: 2dppx) {
-        background-image: url(../img/icons/four@2x.png);
+        background-image: url(../img/icons-img/four@2x.png);
       }
     }
   }
@@ -190,4 +213,8 @@
   line-height: 18px;
   color: @dark-gray;
   font-family:"Arial", sans-serif;
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

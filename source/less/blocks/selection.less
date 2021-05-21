@@ -1,10 +1,11 @@
 .selection {
   @media (min-width: @tablet-width) {
-    margin-bottom: 72px;
+    margin-bottom: 55px;
   }
   @media (min-width: @desktop-width) {
-    margin-bottom: 82px;
+    margin-bottom: 63px;
   }
+
 }
 .selection h1 {
   font-weight: normal;
@@ -14,7 +15,7 @@
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 76px;
+    margin-bottom: 55px;
   }
   @media (min-width: @desktop-width) {
     margin-bottom: 56px;
@@ -26,10 +27,16 @@
   line-height: 18px;
   text-transform: uppercase;
   margin-bottom: 39px;
+  & br {
+    display: none;
+    @media (min-width: @tablet-width) {
+      display: initial;
+    }
+  }
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 30px;
-    margin-bottom: 44px;
+    margin-bottom: 63px;
   }
   @media (min-width: @desktop-width) {
     margin-bottom: 66px;
