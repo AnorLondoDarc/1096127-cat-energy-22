@@ -1,9 +1,21 @@
 .promo {
   margin-bottom: 25px;
+  position: relative;
+  background-image: url("../img/cat-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 320px 302px;
+  background-position: 0 0;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/cat-background@2x.jpg");
+  }
+
   @media (min-width: @tablet-width) {
+    background-image: none;
     padding-top: 0;
     margin-bottom: 520px;
   }
+
   @media (min-width: @desktop-width) {
     margin-bottom: 270px;
   }
@@ -14,8 +26,9 @@
   font-size: 36px;
   line-height: 36px;
   margin-bottom: 25px;
-  color:@white;
+  color: @white;
   text-align: center;
+
   @media (min-width: @tablet-width) {
     font-size: 60px;
     line-height: 60px;
@@ -24,18 +37,21 @@
     margin-left: 83px;
     margin-bottom: 40px;
   }
+
   @media (min-width: @desktop-width) {
     margin-left: 78px;
   }
 }
+
 .promo__text {
   font-weight: normal;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
   margin-bottom: 300px;
-  color:@white;
+  color: @white;
   text-align: center;
+
   @media (min-width: @tablet-width) {
     font-size: 20px;
     line-height: 20px;
@@ -44,13 +60,16 @@
     margin-left: 83px;
     text-align: left;
   }
+
   @media (min-width: @desktop-width) {
     margin-bottom: 52px;
     margin-left: 78px;
   }
 }
+
 .promo__link {
   width: auto;
+
   @media (min-width: @tablet-width) {
     margin-left: 83px;
     font-size: 20px;
@@ -58,36 +77,33 @@
     padding: 16px 27px;
     width: 246px;
   }
+
   @media (min-width: @desktop-width) {
     margin-left: 78px;
   }
 }
-.page-header__logo-img-title {
-  @media (min-width: @tablet-width) {
-    display: none;
-  }
-}
-.page-header__logo-img {
-  @media (min-width: @tablet-width) {
-    width: 174px;
-  }
-  @media (min-width: @desktop-width) {
-    width: 201px;
-  }
-}
+
 .promo__wrapper {
   position: relative;
+  padding-top: 26px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+  }
 }
+
 .promo__img-wrapper {
   position: absolute;
   width: 280px;
-  top: 140px;
+  top: 169px;
+
   @media (min-width: @tablet-width) {
     width: 709px;
     height: 609px;
     z-index: -1;
     top: 200px;
   }
+
   @media (min-width: @desktop-width) {
     width: 552;
     height: 499px;
